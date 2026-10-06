@@ -60,3 +60,23 @@ PENDIENTE: fisica o virtualizada; justificar la eleccion.
 - [ ] Copias y restauracion
 - [ ] Rendimiento y seguridad
 - [ ] Memoria final
+
+# Laboratorio Proxmox individual
+
+## Objetivo
+
+Desplegar y administrar un servicio Linux con Bash y Ansible.
+
+- Modalidad: virtualizada.
+- Estado: documentacion inicial.
+
+| Elemento | Estado |
+|---|---|
+| Nodo Proxmox | Pendiente de instalacion |
+
+[Ficha inicial](docs/00-ficha-inicial.md)
+[Bitacora](docs/00-bitacora.md)
+
+```bash
+git status
+```
