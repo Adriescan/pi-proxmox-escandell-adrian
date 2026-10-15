@@ -26,7 +26,7 @@ PENDIENTE: explicar la necesidad que resolvera el laboratorio.
 
 ## Modalidad
 
-PENDIENTE: fisica o virtualizada; justificar la eleccion.
+Fisica o Virtualizada; justificar la eleccion: se realizara de manera virtualizada, ya que el equipo que se iba a utilizar carecia de la suficiente potencia para poder realizarlo con comodidad
 
 ## Indice de documentacion
 
@@ -48,8 +48,8 @@ PENDIENTE: fisica o virtualizada; justificar la eleccion.
 
 - [X] GitHub creado y primer commit publicado
 - [X] URL entregada y acceso docente comprobado
-- [ ] Modalidad indicada
-- [ ] Inventario
+- [X] Modalidad indicada
+- [X] Inventario
 - [ ] Diagrama de red
 - [ ] Instalacion Proxmox
 - [ ] Plantilla Linux

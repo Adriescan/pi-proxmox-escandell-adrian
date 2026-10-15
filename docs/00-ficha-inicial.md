@@ -5,8 +5,8 @@
 | Identificador del alumno | REALIZADO |
 | URL GitHub | REALIZADO |
 | Acceso docente comprobado | PENDIENTE |
-| Modalidad fisica o virtualizada | PENDIENTE |
-| Recursos conocidos | PENDIENTE |
+| Modalidad fisica o virtualizada | REALIZADO: Sera de manera virtualizada |
+| Recursos conocidos | REALIZADO |
 | Nombre del nodo | PENDIENTE |
 | Servicio ASO previsto | PENDIENTE |
 | Red de laboratorio | PENDIENTE |
