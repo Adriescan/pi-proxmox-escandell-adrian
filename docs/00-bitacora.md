@@ -21,10 +21,19 @@ las evidencias utiles; evita frases generales como "he trabajado en Proxmox".
 - Pruebas y resultados: se utilizaron programas como CPU-Z y HWiNFO dentro de HirensBootCD para los requisitos del ordenador inicial; y para el ordenador donde ira la VM al contar con Linux, se utilizaron herramientas nativas y comandos de este mismo 
 - Documentos o evidencias: [Ficha inicial](00-ficha-inicial.md) y [Inventario Hardware](01-inventario-hardware.md).
 - Incidencias y solucion o estado pendiente: no se encontro ninguna incidencia
-- Siguiente paso: crear laboratorio Proxmox desde Virtualbox (en nuestro propio ordenador).
+- Siguiente paso: configurar red en VirtualBox para Laboratorio Proxmox.
 
-## Sesion 03 - 
-- Objetivo: crear laboratiro  Proxmox desde Virtualbox
+## Sesion 03 - 20/10/26
+- Objetivo: diseñar la red del Laboratorio Proxmox
+- Acciones realizadas: Se realiza la documentacion de como sera la red de nuestro Proxmox y se realizo un pequeño diagrama junto para mejor entendimiento de como sera nuestra red.
+- Decisiones y motivos: No fue necesario la realizacion de decisiones ni motivos.
+- Pruebas y resultados: Se probo la creacion de diagramas desde el propio Markdown (mediante mermaid) y el resultado fue bastante satisfactorio.
+- Documentos o evidencias: [Diagrama de red](02-diagrama-red.md).
+- Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
+- Siguiente paso: instalacion de Laboratorio Proxmox.
+
+## Sesion 04 - 
+- Objetivo: instalacion de Laboratorio Proxmox
 - Acciones realizadas: PENDIENTE.
 - Decisiones y motivos: PENDIENTE.
 - Pruebas y resultados: PENDIENTE.
