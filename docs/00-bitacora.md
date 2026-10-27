@@ -32,8 +32,17 @@ las evidencias utiles; evita frases generales como "he trabajado en Proxmox".
 - Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
 - Siguiente paso: instalacion de Laboratorio Proxmox.
 
-## Sesion 04 - 
+## Sesion 04 - 27/10/26
 - Objetivo: instalacion de Laboratorio Proxmox
+- Acciones realizadas: configuracion previa de la VM de Proxmox, instalacion de Proxmox, configuracion de las interfaces de red y comprobacion de acceso por web al Proxmox.
+- Decisiones y motivos: No fue necesario la realizacion de decisiones ni motivos.
+- Pruebas y resultados: Se probo que se pudiera acceder al Proxmox desde la web y el resultado fue exitoso.
+- Documentos o evidencias: [Instalacion de Proxmox](03-instalacion-proxmox.md).
+- Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
+- Siguiente paso: plantilla de Linux.
+
+## Sesion 05 - 
+- Objetivo: plantilla de Linux.
 - Acciones realizadas: PENDIENTE.
 - Decisiones y motivos: PENDIENTE.
 - Pruebas y resultados: PENDIENTE.

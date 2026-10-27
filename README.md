@@ -9,11 +9,11 @@ URL GitHub: https://github.com/Adriescan/pi-proxmox-escandell-adrian.git
 Desplegar y administrar un servicio Linux con Bash y Ansible.
 
 - Modalidad: virtualizada.
-- Estado: instalacion de Proxmox pendiente.
+- Estado: instalacion de Proxmox realizada.
 
 | Elemento | Estado |
 |---|---|
-| Nodo Proxmox | Pendiente de instalacion |
+| Nodo Proxmox | Instalado correctamente |
 
 [Ficha inicial](docs/00-ficha-inicial.md)
 [Bitacora](docs/00-bitacora.md)
@@ -51,7 +51,7 @@ Fisica o Virtualizada; justificar la eleccion: se realizara de manera virtualiza
 - [X] Modalidad indicada
 - [X] Inventario
 - [X] Diagrama de red
-- [ ] Instalacion Proxmox
+- [X] Instalacion Proxmox
 - [ ] Plantilla Linux
 - [ ] VMs/LXC
 - [ ] Servicio ASO
