@@ -43,7 +43,7 @@ Ahora comprobaremos que podemos activar la virtualizacion anidada en nuestra maq
 ![virtanidada-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/07-Virtualizacion-anidada-maquina.png)
 
 Tambien deberemos tener activada otra opcion llamada "Hardware Virtualization" para poder tener un mejor rendimento de virtualizacion en nuestra maquina virtual. En mi caso, puede activar esta opcion sin problema
-![virthardware-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/08-Virtualizacion-hardware-maquina)]
+![virthardware-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/08-Virtualizacion-hardware-maquina.png)]
 
 ### Instalacion Proxmox
 Al tener ya todo configurado perfectamente, inciaremos la instalacion de proxmox. Primero indicaremos el disco donde instalaremos Proxmox (en nuestro caso, el VDI que creamos antes)
