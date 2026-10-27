@@ -55,7 +55,7 @@ Luego configuraremos la interfaz de red tal y como indicamos en nuestro [diagram
 ![red-instalacion](../evidencias/capturas-o-salidas/03-instalacion-proxmox/10-Red-instalacion-Proxmox.png)
 
 Y aqui un resumen de la configuracion que se ha puesto en Proxmox:
-![resumen-instalacion](../evidencias/capturas-o-salidas/03-instalacion-proxmox/11-Resumen-instalacion-Proxmox)
+![resumen-instalacion](../evidencias/capturas-o-salidas/03-instalacion-proxmox/11-Resumen-instalacion-Proxmox.png)
 
 ### Configuraciones posteriores y comprobacion de que funciona
 Al terminal la instalacion de Proxmox, tendremos que configurar la interfaz Host-Only desde su archivo de configuracion, tal como indicamos en nuestro [diagrama de red](02-diagrama-red.md); para poder acceder a Proxmox desde la web (que en mi caso, la interfaz Host-Only es la nic1)
