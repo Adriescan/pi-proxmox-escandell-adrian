@@ -14,10 +14,12 @@ Primero crearemos la maquina virtual de Proxmox, insertando los parametros en la
 ![ajustes-vm-1](../evidencias/capturas-o-salidas/03-instalacion-proxmox/01-Ajustes-maquina.png)
 
 - Asignacion de RAM y vCPU
+
 ![ajustes-vm-2](../evidencias/capturas-o-salidas/03-instalacion-proxmox/02-Ajustes-maquina.png)
 Justificacion mayor tamaño vCPU: en mi caso asigno mas de dos vCPU ya que, el equipo que voy a utilizar (indicado en la practica anterior de [inventariado](01-inventario-hardware.md)); cuenta con suficientes recursos como para ampliar un poco mas la cantidad de vCPU
 
 - Creacion de disco virtual
+
 ![ajustes-vm-3](../evidencias/capturas-o-salidas/03-instalacion-proxmox/03-Ajustes-maquina.png)
 
 ### Configuracion de interfaces de red
