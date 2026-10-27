@@ -16,6 +16,7 @@ Primero crearemos la maquina virtual de Proxmox, insertando los parametros en la
 - Asignacion de RAM y vCPU
 
 ![ajustes-vm-2](../evidencias/capturas-o-salidas/03-instalacion-proxmox/02-Ajustes-maquina.png)
+
 Justificacion mayor tamaño vCPU: en mi caso asigno mas de dos vCPU ya que, el equipo que voy a utilizar (indicado en la practica anterior de [inventariado](01-inventario-hardware.md)); cuenta con suficientes recursos como para ampliar un poco mas la cantidad de vCPU
 
 - Creacion de disco virtual
@@ -26,10 +27,13 @@ Justificacion mayor tamaño vCPU: en mi caso asigno mas de dos vCPU ya que, el e
 Tendiendo la maquina creada, configuraremos las interfaces de red de nuestra maquina Proxmox, siguiendo el esquema de red que hicimos en la anterior practica [Diagrama de red](02-diagrama-red.md). Dejaremos una interfaz en NAT y la otra la configuraremos como una interfaz Host-Only
 
 **NAT**
+
 ![NAT-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/04-Asignacion-NAT-maquina.png)
 
 **Host-Only**
+
 ![Host-Only-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/05-Configuracion-Hostonly-maquina.png)
+
 (Aunque el adaptador tenga DHCP habilitado, en nuestra maquina le asignaremos un IP fija; que eso se realizara mas adelante)
 
 ![Host-Only-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/06-Asignacion-Hostonly-maquina.png)
