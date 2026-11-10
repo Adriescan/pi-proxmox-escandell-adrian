@@ -9,11 +9,12 @@ URL GitHub: https://github.com/Adriescan/pi-proxmox-escandell-adrian.git
 Desplegar y administrar un servicio Linux con Bash y Ansible.
 
 - Modalidad: virtualizada.
-- Estado: instalacion de Proxmox realizada.
+- Estado: configuracion del nodo PENDIENTE.
 
 | Elemento | Estado |
 |---|---|
 | Nodo Proxmox | Instalado correctamente |
+| Configuracion del nodo | PENDIENTE |
 
 [Ficha inicial](docs/00-ficha-inicial.md)
 [Bitacora](docs/00-bitacora.md)
@@ -35,13 +36,14 @@ Fisica o Virtualizada; justificar la eleccion: se realizara de manera virtualiza
 - [Inventario](docs/01-inventario-hardware.md)
 - [Diagrama de red](docs/02-diagrama-red.md)
 - [Instalacion de Proxmox](docs/03-instalacion-proxmox.md)
-- [Plantilla Linux](docs/04-plantilla-linux.md)
-- [VMs y LXC](docs/05-vms-lxc.md)
-- [Servicio ASO](docs/06-servicio-aso.md)
-- [Automatizacion Bash y Ansible](docs/07-automatizacion.md)
-- [Copias y restauracion](docs/08-copias-restauracion.md)
-- [Rendimiento y seguridad](docs/09-rendimiento-seguridad.md)
-- [Memoria tecnica](docs/10-memoria-tecnica.md)
+- [Configuracion del nodo](docs/04-configuracion-nodo.md)
+- [Plantilla Linux](docs/05-plantilla-linux.md)
+- [VMs y LXC](docs/06-vms-lxc.md)
+- [Servicio ASO](docs/07-servicio-aso.md)
+- [Automatizacion Bash y Ansible](docs/08-automatizacion.md)
+- [Copias y restauracion](docs/09-copias-restauracion.md)
+- [Rendimiento y seguridad](docs/10-rendimiento-seguridad.md)
+- [Memoria tecnica](docs/11-memoria-tecnica.md)
 - [Evidencias](evidencias/README.md)
 
 ## Estado
