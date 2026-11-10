@@ -84,6 +84,43 @@ Al terminal la instalacion de Proxmox, tendremos que configurar la interfaz Host
 Por ultimo, comprobaremos que mediante la IP que acabamos de configurar podemos acceder a nuestro Proxmox desde la web
 ![acceso-web-proxmox](../evidencias/capturas-o-salidas/03-instalacion-proxmox/13-Acceso-Proxmox-Web.png)
 
+## 03.1 Configuracion del nodo
+### Revisar donde se guardaran las cosas
+Mediante los comandos mostrados en la captura, veremos como esta repartido el disco y donde se almacenaran las cosas
+![reparto-disco-proxmox](../evidencias/capturas-o-salidas/03.1-configuracion-nodo/01-Comprobacion-reparto-disco.png)
+
+- En la particion local se almacenaran las ISOs, plantillas y copias de seguridad
+- En la particion local-lvm se almacenan los VDI de las maquinas
+- En la particion pve-root contiene el sistema operativo Proxmox
+
+| Almacenamiento | Capacidad | Utilizado | Disponible |
+|---|---|---|---|
+| local | 29,37GiB | 4,13GiB | 23,64GiB |
+| local-lvm | 29,91GiB | 0GiB | 29,91GiB |
+| pve-root | 30GiB | 4,2GiB | 24GiB |
+
+### Comparar configuracion realizada con el diagrama
+En este mismo documento muestro como configure la red, en el apartado de Configuraciones posteriores y comprobacion de que funciona
+Para compararla con el diagrama que realizamos, puede acceder al documento [Diagrama de red](02-diagrama-red.md)
+
+### Revisar quien puede administrar nodo
+Mediante el comando mostrado en la captura de pantalla, se muestran los usuarios que tenemos en nuestro Proxmox; por el momento solo contamos con el usuario creado durante la instalacion
+![usuarios-proxmox](../evidencias/capturas-o-salidas/03.1-configuracion-nodo/02-Comprobacion-usuarios.png)
+
+En cuanto el firewall, de momento tampoco se ha aplicado ninguna configuracion, a si que; en esta captura muestro su estado actual
+![estado-firewall-proxmox](../evidencias/capturas-o-salidas/03.1-configuracion-nodo/03-Comprobacion-firewall.png)
+
+### Ajustar el reparto de recursos
+Aqui plasmaremos los cambios finales que tenemos, donde por ejemplo; el disco a sido reducido de tamaño, porque crear un disco fijo de 120GBs era demasiado pesado
+| CPU/vCPU | Ram | Disco o almacenamiento | Motivo del reparto |
+|---|---|---|---|
+| Proxmox | 4 vCPU | 8 GiB totales | VDI 80 GiB | Recursos totales asignados a Proxmox |
+| srv-aso | 2 vCPU | 3 GiB | 18 GiB | Servidor Linux con servicios de red y administración |
+| cli-linux | 2 vCPU | 2 GiB | 10 GiB | Cliente Linux para realizar las pruebas |
+| Plantilla, ISOs y copias | No aplica | No aplica | Reserva lógica de 10 GiB | Almacenar imágenes y archivos auxiliares |
+| Margen de operacion | CPU compartida | 3 GiB dentro de Proxmox; aproximadamente 8 GB fuera para Fedora | |  1,91 GiB en local-lvm y 13,64 GiB en local, antes de nuevos archivos | Evitar agotar completamente el almacenamiento |
+(Si quiere ver la anterior reparticion de recursos, esta disponible en [Inventario Hardware](01-inventario-hardware.md)
+
 ## Comandos usados
 **Configuracion de red**
 ```bash

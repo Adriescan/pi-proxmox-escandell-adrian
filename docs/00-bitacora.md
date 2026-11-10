@@ -48,9 +48,18 @@ las evidencias utiles; evita frases generales como "he trabajado en Proxmox".
 - Pruebas y resultados: En ciertos aspectos, se nota una mejora bastante buena.
 - Documentos o evidencias: [Instalacion de Proxmox](03-instalacion-proxmox.md) (se indica tanto la configuracion antigua como los cambios y mejoras).
 - Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
+- Siguiente paso: configuracion del nodo.
+
+## Sesion 05 - 10/11/26
+- Objetivo: configuracion del nodo.
+- Acciones realizadas: Comprobacion y configuracion previa del nodo.
+- Decisiones y motivos: El motivo de esto es tener un pequeño feedback para saber como luego configurar las maquinas virtuales del Proxmox.
+- Pruebas y resultados: Por el momento no se ha probado nada.
+- Documentos o evidencias: Se encuentra dentro del archivo [Instalacion de Proxmox](03-instalacion-proxmox.md) (indicado bajo un subapartado llamado 03.1 Configuracion del nodo).
+- Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
 - Siguiente paso: plantilla de Linux.
 
-## Sesion 05 - 
+## Sesion 06 -
 - Objetivo: plantilla de Linux.
 - Acciones realizadas: PENDIENTE.
 - Decisiones y motivos: PENDIENTE.
@@ -58,6 +67,7 @@ las evidencias utiles; evita frases generales como "he trabajado en Proxmox".
 - Documentos o evidencias: PENDIENTE.
 - Incidencias y solucion o estado pendiente: PENDIENTE.
 - Siguiente paso: PENDIENTE.
+
 
 ## Instrucciones bitacora
 Anadir una entrada con esta estructura en cada sesion. El historial de
