@@ -51,9 +51,11 @@ Primero activaremos la opcion PAE/NX
 ![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/07-Virtualizacion-anidada-maquina.png)
 
 Luego cambiaremos la paravirtualizacion de la predeterminada a KVM para mejor funcionamiento de la virtualizacion que albergara nuestra maquina de Proxmox
+
 ![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/14-Mejora-virtualizacion-PAENX.png)
 
 Despues, cambiaremos la interfaz de discos de SATA a virtioscsi y le indicaremos a esa misma interfaz que utilice la cache del I/O anfitrion
+
 ![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/15-Mejora-discos-virtioscsi.png)
 
 Y por ultimo, cambiaremos la configuracion anterior de disco de 120GBs dinamico; por uno de 80GBs fijo
