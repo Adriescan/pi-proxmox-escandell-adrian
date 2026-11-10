@@ -45,6 +45,23 @@ Ahora comprobaremos que podemos activar la virtualizacion anidada en nuestra maq
 Tambien deberemos tener activada otra opcion llamada "Hardware Virtualization" para poder tener un mejor rendimento de virtualizacion en nuestra maquina virtual. En mi caso, puede activar esta opcion sin problema
 ![virthardware-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/08-Virtualizacion-hardware-maquina.png)]
 
+### Otras configuraciones y mejoras para la VM
+Ahora nos fijaremos en otras mejoras que podemos aplicar a nuestra maquina de Proxmox.
+Primero activaremos la opcion PAE/NX
+![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/07-Virtualizacion-anidada-maquina.png)
+
+Luego cambiaremos la paravirtualizacion de la predeterminada a KVM para mejor funcionamiento de la virtualizacion que albergara nuestra maquina de Proxmox
+![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/14-Mejora-virtualizacion-PAENX.png)
+
+Despues, cambiaremos la interfaz de discos de SATA a virtioscsi y le indicaremos a esa misma interfaz que utilice la cache del I/O anfitrion
+![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/15-Mejora-discos-virtioscsi.png)
+
+Y por ultimo, cambiaremos la configuracion anterior de disco de 120GBs dinamico; por uno de 80GBs fijo
+![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/16-Cambio-disco-Proxmox.png)
+![mejoras-vm](../evidencias/capturas-o-salidas/03-instalacion-proxmox/17-Asignacion-nuevo-disco-Proxmox.png)
+
+(Yo indique que fuera Unidad de estado solido para mayor velocidad del disco)
+
 ### Instalacion Proxmox
 Al tener ya todo configurado perfectamente, inciaremos la instalacion de proxmox. Primero indicaremos el disco donde instalaremos Proxmox (en nuestro caso, el VDI que creamos antes)
 ![disco-instalacion](../evidencias/capturas-o-salidas/03-instalacion-proxmox/09-Disco-instalacion-Proxmox.png)
@@ -69,9 +86,13 @@ Por ultimo, comprobaremos que mediante la IP que acabamos de configurar podemos 
 **Configuracion de red**
 ```bash
 nano /etc/network/interfaces/
+systemctl restart networking
 ```
 
 ## Incidencias
 No llego a ocurrir ninguna incidencia durante la instalacion
+
+## Conclusion
+Se tuvo que cambiar el disco antiguo por uno nuevo, debido a que crear un disco de 120GBs fijos era demasiado excesivo
 
 [Volver al indice](../README.md)

@@ -39,6 +39,15 @@ las evidencias utiles; evita frases generales como "he trabajado en Proxmox".
 - Pruebas y resultados: Se probo que se pudiera acceder al Proxmox desde la web y el resultado fue exitoso.
 - Documentos o evidencias: [Instalacion de Proxmox](03-instalacion-proxmox.md).
 - Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
+- Siguiente paso: mejoras y cambios de instalacion Laboratorio Proxmox 
+
+## Sesion 04.1 - 10/11/26
+- Objetivo: mejoras y cambios para instalacion Laboratorio Proxmox.
+- Acciones realizadas: se realizaron mejoras y cambios en nuestra VM de Proxmox como: activar PAE/NX, KVM, cambiar interfaz sata a SCSI.
+- Decisiones y motivos: Se realizo estos cambios para un mejor funcionamiento de nuestra VM.
+- Pruebas y resultados: En ciertos aspectos, se nota una mejora bastante buena.
+- Documentos o evidencias: [Instalacion de Proxmox](03-instalacion-proxmox.md) (se indica tanto la configuracion antigua como los cambios y mejoras).
+- Incidencias y solucion o estado pendiente: no hubo ninguna incidencia.
 - Siguiente paso: plantilla de Linux.
 
 ## Sesion 05 - 
