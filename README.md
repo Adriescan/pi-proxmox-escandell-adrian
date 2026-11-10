@@ -52,6 +52,7 @@ Fisica o Virtualizada; justificar la eleccion: se realizara de manera virtualiza
 - [X] Inventario
 - [X] Diagrama de red
 - [X] Instalacion Proxmox
+- [ ] Configuracion del nodo
 - [ ] Plantilla Linux
 - [ ] VMs/LXC
 - [ ] Servicio ASO
