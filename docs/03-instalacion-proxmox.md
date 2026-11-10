@@ -112,13 +112,14 @@ En cuanto el firewall, de momento tampoco se ha aplicado ninguna configuracion, 
 
 ### Ajustar el reparto de recursos
 Aqui plasmaremos los cambios finales que tenemos, donde por ejemplo; el disco a sido reducido de tamaño, porque crear un disco fijo de 120GBs era demasiado pesado
-| CPU/vCPU | Ram | Disco o almacenamiento | Motivo del reparto |
-|---|---|---|---|
+| Recurso | CPU/vCPU | Ram | Disco o almacenamiento | Motivo del reparto |
+|---|---|---|---|---|
 | Proxmox | 4 vCPU | 8 GiB totales | VDI 80 GiB | Recursos totales asignados a Proxmox |
 | srv-aso | 2 vCPU | 3 GiB | 18 GiB | Servidor Linux con servicios de red y administración |
 | cli-linux | 2 vCPU | 2 GiB | 10 GiB | Cliente Linux para realizar las pruebas |
 | Plantilla, ISOs y copias | No aplica | No aplica | Reserva lógica de 10 GiB | Almacenar imágenes y archivos auxiliares |
 | Margen de operacion | CPU compartida | 3 GiB dentro de Proxmox; aproximadamente 8 GB fuera para Fedora | |  1,91 GiB en local-lvm y 13,64 GiB en local, antes de nuevos archivos | Evitar agotar completamente el almacenamiento |
+
 (Si quiere ver la anterior reparticion de recursos, esta disponible en [Inventario Hardware](01-inventario-hardware.md)
 
 ## Comandos usados
@@ -126,6 +127,10 @@ Aqui plasmaremos los cambios finales que tenemos, donde por ejemplo; el disco a 
 ```bash
 nano /etc/network/interfaces/
 systemctl restart networking
+pvesm status
+df -h
+pveum user list
+pve-firewall status
 ```
 
 ## Incidencias
