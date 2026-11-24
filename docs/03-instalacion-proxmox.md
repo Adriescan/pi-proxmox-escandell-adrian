@@ -87,9 +87,11 @@ Por ultimo, comprobaremos que mediante la IP que acabamos de configurar podemos 
 ## 03.1 Configuracion del nodo
 ### Relacionar las interfaces con el diagrama de red y pruebas de red
 Primero comprobaremos con ip route la configuracion de las interfaces esta realizada tal y como pide la practica (y configuramos en [Diagrama de red](02-diagrama-red.md))
+
 ![comprobacion-red](../evidencias/capturas-o-salidas/03.1-configuracion-nodo/04-Comprobacion-interfaces-red.png)
 
 Luego comprobaremos que podemos hacer una peticion DNS
+
 ![comprobacion-DNS](../evidencias/capturas-o-salidas/03.1-configuracion-nodo/05-Comprobacion-DNS.png)
 
 Y por ultimo, comprobaremos que podemos actualizar nuestra maquina Proxmox
