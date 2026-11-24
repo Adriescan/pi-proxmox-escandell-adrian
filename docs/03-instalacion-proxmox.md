@@ -123,7 +123,6 @@ Aqui plasmaremos los cambios finales que tenemos, donde por ejemplo; el disco a 
 (Si quiere ver la anterior reparticion de recursos, esta disponible en [Inventario Hardware](01-inventario-hardware.md)
 
 ## Comandos usados
-**Configuracion de red**
 ```bash
 nano /etc/network/interfaces/
 systemctl restart networking
